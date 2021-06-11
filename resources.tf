@@ -5,22 +5,18 @@ resource "aws_acm_certificate" "sensoriumxr" {
 }
 
 
-
-
-
-
-
-
 # Alarm to Cloud Watch
-resource "aws_cloudwatch_metric_alarm" "sensoriumxr-cert-alarm" {
-  alarm_name                = "terraform-test-alarm-cert"
-  comparison_operator       = "GreaterThanOrEqualToThreshold"
-  evaluation_periods        = "2"
-  metric_name               = "alarm-cert"
-  namespace                 = "AWS/ACM"
-  period                    = "3600"
-  statistic                 = "Average"
-  threshold                 = "80"
-  alarm_description         = "expired cert alarm "
-  insufficient_data_actions = []
+resource "aws_cloudwatch_metric_alarm" "Cert-alarm" {
+  alarm_name          = "Cert-alarm"
+  comparison_operator = "LessThanThreshold"
+  evaluation_periods  = "2"
+  metric_name         = "HealthyHostCount"
+  namespace           = "AWS/ACM"
+  period              = "3600"
+  statistic           = "Average"
+  threshold           = "100"
+  alarm_description   = "CErt alarm"
+  actions_enabled     = "true"
+  alarm_actions       = ["arn:aws:sns:${var.region}:${var.account_id}:${var.sns_topic_name}"]
+  ok_actions          = ["arn:aws:sns:${var.region}:${var.account_id}:${var.sns_topic_name}"]
 }

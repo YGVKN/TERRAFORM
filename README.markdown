@@ -13,5 +13,6 @@
 - terra apply   -refresh -auto-approve
 - terra show && terra state list
 - terra destroy -auto-approve
-- [YGVKN]()
+-
+[YGVKN](mailto:denis.yagovkin@sensoriumxr.com)
 - ✨Magic ✨
