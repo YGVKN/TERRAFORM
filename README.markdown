@@ -15,5 +15,3 @@
 - terra destroy -auto-approve
 [YGVKN](sensoriumxr.com)
 - ✨Magic ✨
-
-
