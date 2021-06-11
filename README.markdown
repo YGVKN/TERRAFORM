@@ -1,7 +1,7 @@
 # TerraForm certs validate
 ## AWS ACM Validation & Alarm
 
-[![TerraForm | AWS ACM](https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2016/10/11/image1_numbereddiagram_b.png)](https://aws.amazon.com/ru/certificate-manager/)
+[![TerraForm | AWS ACM](https://miro.medium.com/max/640/1*yC8jKlY1uaUyntCxVcvHyw.png)](https://aws.amazon.com/ru/certificate-manager/)
 
 
 - shell run >
@@ -13,5 +13,5 @@
 - terra apply   -refresh -auto-approve
 - terra show && terra state list
 - terra destroy -auto-approve
-[YGVKN](sensoriumxr.com)
+- [YGVKN]()
 - ✨Magic ✨

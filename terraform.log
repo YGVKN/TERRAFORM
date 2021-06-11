@@ -1,0 +1,11 @@
+2021/06/11 13:54:27 [INFO] Terraform version: 0.14.7  
+2021/06/11 13:54:27 [INFO] Go runtime version: go1.15.6
+2021/06/11 13:54:27 [INFO] CLI args: []string{"/usr/local/bin/terraform", "fmt", "-no-color", "-"}
+2021/06/11 13:54:27 [DEBUG] Attempting to open CLI config file: /Users/ygvkn/.terraformrc
+2021/06/11 13:54:27 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021/06/11 13:54:27 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021/06/11 13:54:27 [DEBUG] ignoring non-existing provider search directory /Users/ygvkn/.terraform.d/plugins
+2021/06/11 13:54:27 [DEBUG] ignoring non-existing provider search directory /Users/ygvkn/Library/Application Support/io.terraform/plugins
+2021/06/11 13:54:27 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2021/06/11 13:54:27 [INFO] CLI command args: []string{"fmt", "-no-color", "-"}
+2021/06/11 13:54:27 [TRACE] terraform fmt: Formatting <stdin>
