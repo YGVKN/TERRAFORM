@@ -3,6 +3,7 @@ resource "aws_acm_certificate" "sensoriumxr" {
   domain_name       = "sensoriumxr.com"
   validation_method = "DNS"
 }
+
 # Alarm to Cloud Watch
 resource "aws_cloudwatch_metric_alarm" "sensoriumxr-cert-alarm" {
   alarm_name                = "terraform-test-alarm-cert"
